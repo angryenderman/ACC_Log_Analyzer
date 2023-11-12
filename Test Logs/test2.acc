@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Competition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Teams>
+    <Team>
+      <Name>x</Name>
+      <Number>1</Number>
+      <PayloadPrediction_c0>0</PayloadPrediction_c0>
+      <PayloadPrediction_c1>0</PayloadPrediction_c1>
+      <Score_Report>0</Score_Report>
+      <Score_Video>0</Score_Video>
+    </Team>
+    <Team>
+      <Name>y</Name>
+      <Number>2</Number>
+      <PayloadPrediction_c0>0</PayloadPrediction_c0>
+      <PayloadPrediction_c1>0</PayloadPrediction_c1>
+      <Score_Report>0</Score_Report>
+      <Score_Video>0</Score_Video>
+    </Team>
+    <Team>
+      <Name>z</Name>
+      <Number>3</Number>
+      <PayloadPrediction_c0>0</PayloadPrediction_c0>
+      <PayloadPrediction_c1>0</PayloadPrediction_c1>
+      <Score_Report>0</Score_Report>
+      <Score_Video>0</Score_Video>
+    </Team>
+    <Team>
+      <Name>abc</Name>
+      <Number>4</Number>
+      <PayloadPrediction_c0>0</PayloadPrediction_c0>
+      <PayloadPrediction_c1>0</PayloadPrediction_c1>
+      <Score_Report>0</Score_Report>
+      <Score_Video>0</Score_Video>
+    </Team>
+  </Teams>
+  <Rounds />
+  <SaveName>C:\Users\Alex\Desktop\test.acc</SaveName>
+</Competition>

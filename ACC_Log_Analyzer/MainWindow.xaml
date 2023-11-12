@@ -1,0 +1,69 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ACC_Log_Analyzer"
+        mc:Ignorable="d"
+        Title="ACC Log Analyzer" Height="450" Width="800"
+         xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF" 
+        x:Name="root"
+        xmlns:oxy ="http://oxyplot.org/wpf"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:c="clr-namespace:CalcBinding;assembly=CalcBinding">
+    
+    
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+    
+    <Grid Grid.Column="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!--<Button Content="Test" Margin="5" Click="Button_Click" Grid.Row="0"/>-->
+            <Menu Grid.Row="0" Background="Transparent">
+                <MenuItem Header="File">
+                    <MenuItem Header="Import .nmea" Click="ImportNMEAFile"/>
+                    
+                </MenuItem>
+            </Menu>
+        <m:Map x:Name="myMap" CredentialsProvider="yTEs7AiW14UHvotAhve4~TNYox7b8FlwTtaHmbA33Bg~AlYBQDEN99LDhcIw4FyjytjHSGkJ4yNV6DQdE1zU6rvSZ1I8t2cJIFRZ2YL4_qpG"
+               Grid.Row="1"  >
+            <!--<m:MapPolyline Stroke="Blue" StrokeThickness="1" 
+                 Locations="{Binding Locs, ElementName=root, IsAsync=True, UpdateSourceTrigger=Explicit}" 
+                 Opacity="0.7"
+                           x:Name="Trackline"/>-->
+        </m:Map>
+        <GridSplitter Grid.Row="2" Height="5" HorizontalAlignment="Stretch" VerticalAlignment="top"/>
+        <oxy:PlotView Model="{Binding Model, ElementName=root, IsAsync=True}" Grid.Row="2" Margin="0,5,0,0">
+            
+        </oxy:PlotView>
+        <TextBlock Grid.Row="3" Text="{Binding ElementName=root, Path=nmeamessage, IsAsync=True}"></TextBlock>
+            
+    </Grid>
+
+        <DockPanel Grid.Column="1">
+            <GroupBox Header="Altitude after 60s" DockPanel.Dock="Top" VerticalAlignment="Top">
+                <Label Content="{Binding SixtySecAltitude, ElementName=root, FallbackValue=0 m}" FontSize="30"/>
+            </GroupBox>
+            <GroupBox DockPanel.Dock="Top" Header="Climb Pre-Score" VerticalAlignment="Top">
+                <Label Content="{Binding SixtySecPreScore, ElementName=root,FallbackValue=0}" FontSize="30"/>
+            </GroupBox>
+            <GroupBox DockPanel.Dock="Top" Header="Travelled Distance 60s -> 180s" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="{Binding CruiseDistance, ElementName=root,FallbackValue=0}" FontSize="30"/>
+                    <Label Content="m" FontSize="30"/>
+                </StackPanel>
+                
+            </GroupBox>
+        </DockPanel>
+        
+    </Grid>
+</Window>

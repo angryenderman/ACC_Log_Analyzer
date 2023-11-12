@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Competition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Rounds>
+    <Round>
+      <Number>1</Number>
+      <Flights>
+        <Flight>
+          <NMEA />
+          <TeamNumber>1</TeamNumber>
+          <Payload>1000</Payload>
+          <LoadingTime>15</LoadingTime>
+          <UnLoadingTime>40</UnLoadingTime>
+          <TakeOffBonus>true</TakeOffBonus>
+          <Penalty_toolow>false</Penalty_toolow>
+          <Penalty_toohigh>false</Penalty_toohigh>
+          <Penalty_lostparts>false</Penalty_lostparts>
+          <Penalty_exceedrunway>false</Penalty_exceedrunway>
+          <Penalty_leftflightarea>false</Penalty_leftflightarea>
+          <Time_takeoff>0</Time_takeoff>
+          <Time_landing>0</Time_landing>
+        </Flight>
+        <Flight>
+          <NMEA />
+          <TeamNumber>2</TeamNumber>
+          <Payload>2000</Payload>
+          <LoadingTime>20</LoadingTime>
+          <UnLoadingTime>5</UnLoadingTime>
+          <TakeOffBonus>false</TakeOffBonus>
+          <Penalty_toolow>false</Penalty_toolow>
+          <Penalty_toohigh>false</Penalty_toohigh>
+          <Penalty_lostparts>false</Penalty_lostparts>
+          <Penalty_exceedrunway>false</Penalty_exceedrunway>
+          <Penalty_leftflightarea>false</Penalty_leftflightarea>
+          <Time_takeoff>0</Time_takeoff>
+          <Time_landing>0</Time_landing>
+        </Flight>
+      </Flights>
+      <AirDensity>0</AirDensity>
+    </Round>
+    <Round>
+      <Number>2</Number>
+      <Flights />
+      <AirDensity>0</AirDensity>
+    </Round>
+  </Rounds>
+  <Teams>
+    <Team>
+      <Name>A</Name>
+      <Number>1</Number>
+      <PayloadPrediction_c0>0</PayloadPrediction_c0>
+      <PayloadPrediction_c1>0</PayloadPrediction_c1>
+      <Score_Report>0</Score_Report>
+      <Score_Video>0</Score_Video>
+      <Score_Drawings>0</Score_Drawings>
+    </Team>
+    <Team>
+      <Name>B</Name>
+      <Number>2</Number>
+      <PayloadPrediction_c0>0</PayloadPrediction_c0>
+      <PayloadPrediction_c1>0</PayloadPrediction_c1>
+      <Score_Report>0</Score_Report>
+      <Score_Video>0</Score_Video>
+      <Score_Drawings>0</Score_Drawings>
+    </Team>
+  </Teams>
+  <SaveName />
+</Competition>
